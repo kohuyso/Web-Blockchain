@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.SmartHome.LightController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="921.0">
+         <children>
+            <VBox prefHeight="838.0" prefWidth="256.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="54.0" layoutY="114.0" size="40" wrappingWidth="1.0" />
+                     </children>
+                  </Pane>
+                  <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Các loại thiết bị" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="Health" alignment="BASELINE_LEFT" onAction="#HealthClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Sức khỏe thành viên" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="Bill" alignment="BASELINE_LEFT" onAction="#BillClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Tính hóa đơn" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Tổng quan dự án" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="Time" fill="WHITE" layoutX="30.0" layoutY="127.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane layoutX="251.0" layoutY="55.0" prefHeight="85.0" prefWidth="672.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Label layoutX="326.0" layoutY="23.0" text="Sơ đồ đèn điện" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="120.0" layoutX="206.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@light2%20purple%20background.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="457.0" fitWidth="664.0" layoutX="255.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202022-04-11%20192601.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ngu1" layoutX="335.0" layoutY="163.0" mnemonicParsing="false" onAction="#ngu1C" text="Button" />
+            <Button fx:id="wc1" layoutX="529.0" layoutY="163.0" mnemonicParsing="false" onAction="#WC1C" text="Button" />
+            <Button fx:id="ngu2" layoutX="744.0" layoutY="163.0" mnemonicParsing="false" onAction="#ngu2C" text="Button" />
+            <Button fx:id="wc2" layoutX="309.0" layoutY="734.0" mnemonicParsing="false" onAction="#WC2C" text="Button" />
+            <Button fx:id="khach" layoutX="581.0" layoutY="734.0" mnemonicParsing="false" onAction="#khachC" text="Button" />
+            <Button fx:id="bc" layoutX="842.0" layoutY="734.0" mnemonicParsing="false" onAction="#bcC" text="Button" />
+            <Line endX="7.0" endY="25.00006103515625" layoutX="328.0" layoutY="709.0" startX="7.0" startY="-55.66668701171875" />
+            <Line endX="7.00006103515625" endY="26.0" layoutX="600.0" layoutY="708.0" startX="7.0001220703125" startY="-54.0" />
+            <Line endX="98.0" endY="17.0" layoutX="770.0" layoutY="717.0" startX="98.0" startY="-73.6666259765625" />
+            <Line endX="-15.0" endY="38.66668701171875" layoutX="378.0" layoutY="208.0" startX="-15.0" startY="-19.666656494140625" />
+            <Line endX="2.66668701171875" endY="21.0" layoutX="555.0" layoutY="207.0" startX="2.66668701171875" startY="-18.666656494140625" />
+            <Line endX="-10.0" endY="16.66668701171875" layoutX="780.0" layoutY="218.0" startX="-10.0" startY="-29.666656494140625" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

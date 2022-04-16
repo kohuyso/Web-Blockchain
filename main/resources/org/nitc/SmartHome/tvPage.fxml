@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.SmartHome.tvController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="921.0">
+         <children>
+            <VBox prefHeight="838.0" prefWidth="273.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="54.0" layoutY="114.0" size="40" wrappingWidth="1.0" />
+                     </children>
+                  </Pane>
+                  <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Các loại thiết bị" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="Health" alignment="BASELINE_LEFT" onAction="#HealthClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Sức khỏe thành viên" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="Bill" alignment="BASELINE_LEFT" onAction="#BillClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Tính hóa đơn" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Tổng quan dự án" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="Time" fill="WHITE" layoutX="30.0" layoutY="127.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane layoutX="272.0" layoutY="55.0" prefHeight="85.0" prefWidth="651.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Label layoutX="326.0" layoutY="23.0" prefHeight="39.0" prefWidth="46.0" text="TV" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="120.0" layoutX="206.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@TV%20purple%20background.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="ma1" alignment="BASELINE_LEFT" layoutX="272.0" layoutY="239.0" onAction="#LocNganhClick" prefHeight="93.0" prefWidth="651.0" style="-fx-background-color: #3f2863;" text="Button" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ma2" alignment="BASELINE_LEFT" layoutX="272.0" layoutY="330.0" onAction="#LockRsiClick" prefHeight="85.0" prefWidth="651.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import com.jfoenix.controls.JFXRadioButton?&gt;&lt;?import javafx.scene.paint.Color?&gt;&lt;JFXRadioButton fx:id=&quot;Lock1&quot; layoutX=&quot;786.0&quot; layoutY=&quot;258.0&quot; onAction=&quot;#LockChoose1&quot; text=&quot;Khóa trẻ em&quot; textFill=&quot;WHITE&quot; xmlns=&quot;http://javafx.com/javafx/17&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;unSelectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/unSelectedColor&gt;   &lt;selectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/selectedColor&gt;&lt;/JFXRadioButton&gt;;" text="TV">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ma3" alignment="BASELINE_LEFT" layoutX="272.0" layoutY="416.0" onAction="#DongTienClick" prefHeight="93.0" prefWidth="651.0" style="-fx-background-color: #3f2863;" text="Button" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="manufacture1" fill="WHITE" layoutX="333.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="112.80337524414062">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <JFXRadioButton fx:id="Lock1" layoutX="786.0" layoutY="258.0" onAction="#LockChoose1" text="Khóa trẻ em" textFill="WHITE">
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+               <selectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </selectedColor>
+            </JFXRadioButton>
+            <Text fx:id="manufacture2" fill="#3f2863" layoutX="370.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="manufacture3" fill="WHITE" layoutX="370.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="272.0" layoutY="604.0" prefHeight="233.0" prefWidth="651.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Text fill="WHITE" layoutX="239.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm thiết bị" textAlignment="CENTER" wrappingWidth="172.13681030273438">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="addDeviceB" layoutX="573.0" layoutY="128.0" mnemonicParsing="false" onAction="#addDeviceC" prefHeight="25.0" prefWidth="64.0" text="Thêm" />
+                  <TextField fx:id="addNameDevice" alignment="CENTER" layoutX="40.0" layoutY="92.0" promptText="Tên thiết bị" />
+                  <TextField fx:id="addManu" alignment="CENTER" layoutX="40.0" layoutY="159.0" promptText="Hãng" />
+                  <TextField fx:id="addRoom" alignment="CENTER" layoutX="216.0" layoutY="91.0" promptText="Phòng" />
+                  <TextField fx:id="addInsurance" alignment="CENTER" layoutX="216.0" layoutY="159.0" promptText="Thời gian bảo hành" />
+                  <TextField fx:id="addMedium" alignment="CENTER" layoutX="392.0" layoutY="128.0" promptText="Công suất" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="room1" fill="WHITE" layoutX="722.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <JFXRadioButton fx:id="onORoff1" layoutX="788.0" layoutY="296.0" onAction="#onORoffC1" text="Bật / Tắt" textFill="WHITE">
+               <selectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="onORoff3" layoutX="788.0" layoutY="466.0" onAction="#onORoffC3" text="Bật / Tắt" textFill="WHITE">
+               <selectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="onORoff2" layoutX="784.0" layoutY="383.0" onAction="#onORoffC2" text="Bật / Tắt" textFill="#3f2863">
+               <unSelectedColor>
+                  <Color red="0.24705882370471954" green="0.1568627506494522" blue="0.38823530077934265" />
+               </unSelectedColor>
+               <selectedColor>
+                  <Color red="0.24705882370471954" green="0.1568627506494522" blue="0.38823530077934265" />
+               </selectedColor>
+            </JFXRadioButton>
+            <Line endX="6.3333740234375" endY="71.0" layoutX="598.0" layoutY="535.0" startX="6.33343505859375" startY="-0.99993896484375" />
+            <Button fx:id="LockB" layoutX="493.0" layoutY="553.0" mnemonicParsing="false" onAction="#LockC" style="-fx-background-color: #3f2863;" text="Lock" textFill="WHITE" />
+            <Button fx:id="UnlockB" layoutX="820.0" layoutY="553.0" mnemonicParsing="false" onAction="#UnlockC" style="-fx-background-color: #3f2863;" text="Unlock" textFill="WHITE" />
+            <TextField fx:id="LockT" layoutX="333.0" layoutY="553.0" />
+            <TextField fx:id="UnlockT" layoutX="658.0" layoutY="553.0" />
+            <TextField fx:id="ChannelT1" layoutX="454.0" layoutY="283.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField fx:id="volume1" layoutX="549.0" layoutY="283.0" prefHeight="25.0" prefWidth="71.0" />
+            <Text fill="WHITE" layoutX="534.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Âm lượng" textAlignment="CENTER" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="439.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kênh" textAlignment="CENTER" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="716.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng" />
+            <Button fx:id="chooseB1" layoutX="639.0" layoutY="282.0" mnemonicParsing="false" onAction="#chooseC1" prefHeight="25.0" prefWidth="45.0" text="Chọn" textFill="#3f2863" />
+            <JFXRadioButton fx:id="Lock3" layoutX="790.0" layoutY="436.0" onAction="#LockChoose3" text="Khóa trẻ em" textFill="WHITE">
+               <unSelectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </unSelectedColor>
+               <selectedColor>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </selectedColor>
+            </JFXRadioButton>
+            <Text fx:id="room3" fill="WHITE" layoutX="721.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <TextField fx:id="ChannelT3" layoutX="445.0" layoutY="463.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField fx:id="volume3" layoutX="549.0" layoutY="462.0" prefHeight="25.0" prefWidth="71.0" />
+            <Text fill="WHITE" layoutX="534.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Âm lượng" textAlignment="CENTER" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="433.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kênh" textAlignment="CENTER" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="715.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng" />
+            <Button fx:id="chooseB3" layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#chooseC3" prefHeight="25.0" prefWidth="45.0" text="Chọn" textFill="#3f2863" />
+            <JFXRadioButton fx:id="Lock2" layoutX="786.0" layoutY="347.0" onAction="#LockChoose2" text="Khóa trẻ em" textFill="#3f2863">
+               <unSelectedColor>
+                  <Color red="0.24705882370471954" green="0.1568627506494522" blue="0.38823530077934265" />
+               </unSelectedColor>
+               <selectedColor>
+                  <Color red="0.24705882370471954" green="0.1568627506494522" blue="0.38823530077934265" />
+               </selectedColor>
+            </JFXRadioButton>
+            <Text fx:id="room2" fill="#3f2863" layoutX="721.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import com.jfoenix.controls.JFXRadioButton?&gt;&lt;?import javafx.scene.paint.Color?&gt;&lt;JFXRadioButton fx:id=&quot;Lock1&quot; layoutX=&quot;786.0&quot; layoutY=&quot;258.0&quot; onAction=&quot;#LockChoose1&quot; text=&quot;Khóa trẻ em&quot; textFill=&quot;WHITE&quot; xmlns=&quot;http://javafx.com/javafx/17&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;unSelectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/unSelectedColor&gt;   &lt;selectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/selectedColor&gt;&lt;/JFXRadioButton&gt;;" text="Text" />
+            <TextField fx:id="ChannelT2" layoutX="451.0" layoutY="372.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField fx:id="volume2" layoutX="549.0" layoutY="372.0" prefHeight="25.0" prefWidth="71.0" />
+            <Text fill="#3f2863" layoutX="530.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import com.jfoenix.controls.JFXRadioButton?&gt;&lt;?import javafx.scene.paint.Color?&gt;&lt;JFXRadioButton fx:id=&quot;Lock1&quot; layoutX=&quot;786.0&quot; layoutY=&quot;258.0&quot; onAction=&quot;#LockChoose1&quot; text=&quot;Khóa trẻ em&quot; textFill=&quot;WHITE&quot; xmlns=&quot;http://javafx.com/javafx/17&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;unSelectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/unSelectedColor&gt;   &lt;selectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/selectedColor&gt;&lt;/JFXRadioButton&gt;;" text="Âm lượng" textAlignment="CENTER" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#3f2863" layoutX="433.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import com.jfoenix.controls.JFXRadioButton?&gt;&lt;?import javafx.scene.paint.Color?&gt;&lt;JFXRadioButton fx:id=&quot;Lock1&quot; layoutX=&quot;786.0&quot; layoutY=&quot;258.0&quot; onAction=&quot;#LockChoose1&quot; text=&quot;Khóa trẻ em&quot; textFill=&quot;WHITE&quot; xmlns=&quot;http://javafx.com/javafx/17&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;unSelectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/unSelectedColor&gt;   &lt;selectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/selectedColor&gt;&lt;/JFXRadioButton&gt;;" text="Kênh" textAlignment="CENTER" wrappingWidth="100.13671875">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Text fill="#3f2863" layoutX="715.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import com.jfoenix.controls.JFXRadioButton?&gt;&lt;?import javafx.scene.paint.Color?&gt;&lt;JFXRadioButton fx:id=&quot;Lock1&quot; layoutX=&quot;786.0&quot; layoutY=&quot;258.0&quot; onAction=&quot;#LockChoose1&quot; text=&quot;Khóa trẻ em&quot; textFill=&quot;WHITE&quot; xmlns=&quot;http://javafx.com/javafx/17&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;unSelectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/unSelectedColor&gt;   &lt;selectedColor&gt;      &lt;Color red=&quot;1.0&quot; green=&quot;1.0&quot; blue=&quot;1.0&quot; /&gt;   &lt;/selectedColor&gt;&lt;/JFXRadioButton&gt;;" text="Phòng" />
+            <Button fx:id="chooseB2" layoutX="635.0" layoutY="372.0" mnemonicParsing="false" onAction="#chooseC2" prefHeight="25.0" prefWidth="45.0" text="Chọn" textFill="#3f2863" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
