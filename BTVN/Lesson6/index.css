@@ -260,6 +260,13 @@
     border: none;
     background-color: orange;
 }
+#desButtonRight:hover{
+    background-color: rgb(255, 111, 0);
+}
+#desButtonLeft:hover{
+    background-color: rgb(255, 111, 0);
+}
+
 
 .advert {
     margin-left: 18px;
