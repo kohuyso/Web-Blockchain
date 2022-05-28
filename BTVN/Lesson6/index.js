@@ -17,13 +17,17 @@ var butArrowRight = document.getElementById("desButtonRight");
 var count = 1;
 butArrowLeft.onclick = function() {
     if (count > 1) {
+        document.getElementById('radio' + count).style.backgroundColor = "gray";
         count -= 1;
+        document.getElementById('radio' + count).checked = true;
+        document.getElementById('radio' + count).style.backgroundColor = "orange";
     }
-    document.getElementById('radio' + count).checked = true;
 }
 butArrowRight.onclick = function() {
     if (count < 4) {
+        document.getElementById('radio' + count).style.backgroundColor = "gray";
         count += 1;
+        document.getElementById('radio' + count).checked = true;
+        document.getElementById('radio' + count).style.backgroundColor = "orange";
     }
-    document.getElementById('radio' + count).checked = true;
 }
